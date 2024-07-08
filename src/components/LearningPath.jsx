@@ -91,7 +91,10 @@ const LearningPath = () => {
           <IoIosCheckmark size={30} fill="gray" />
         </div>
         <div className="mt-4">
-          <Image img={learningPathImage} quests={false} />
+          <Image
+            img="https://static.highongrowth.xyz/erc1155-images/65017d014e5f24613adbfd67/83bd377d91ff441aa6f7c46a63c88506.png"
+            quests={false}
+          />
         </div>
         <div
           className="object-cover w-fit p-2  rounded-full bg-black
