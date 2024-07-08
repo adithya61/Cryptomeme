@@ -22,11 +22,11 @@ const LearningPath = () => {
     "https://static.highongrowth.xyz/enterprise/65017d014e5f24613adbfd67/85903745c34d42d684a2dc505768afa7.png";
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col relative bottom-14 items-center overflow-hidden">
       <div className="flex relative top-12">
         <img className="path-one" src={pathOne} alt="path" />
         {/* Accordion */}
-        <div className="accordoin-one flex w-[46rem] relative">
+        <div className="accordoin-one flex w-[46rem] relative ">
           <Accordoin
             image={accordImgOne}
             setIsOpen={setOpenOne}
@@ -34,11 +34,11 @@ const LearningPath = () => {
             tasks={tasks}
           />
         </div>
-        <div className="relative right-[10rem] top-10 z-[-1]">
+        <div className="relative right-[10rem] top-[10rem] z-[-10]">
           <img src={pathTwo} alt="learning path continues" />
         </div>
         {/* image in path */}
-        <div className="flex flex-col w-fit items-start relative right-[10rem]">
+        <div className="flex flex-col items-start relative right-[10rem] top-[10rem]">
           <div className="rounded-full w-fit ml-16 border border-white border-opacity-20">
             <IoIosCheckmark size={30} fill="gray" />
           </div>
@@ -71,10 +71,10 @@ const LearningPath = () => {
         </div>
       </div>
       {/* Path goes on */}
-      <div className=" relative over bottom-[8rem] left-[28.5rem]">
-        <img src={pathThree} alt="dotten path" />
+      <div className=" relative bottom-[-2rem] left-[28.5rem] z-[-1]">
+        <img src={pathThree} alt="dotted path" />
       </div>
-      <div className="relative bottom-[9rem] left-[5rem]">
+      <div className="relative bottom-[-1rem] left-[5rem]">
         <Accordoin
           image={accordImgTwo}
           setIsOpen={setOpenTwo}
@@ -82,11 +82,11 @@ const LearningPath = () => {
           tasks={tasks}
         />
       </div>
-      <div className="relative right-[19rem] bottom-[15rem]">
+      <div className="relative right-[19rem] bottom-[5rem]">
         <img src={pathFour} alt="" />
       </div>
       {/* second image in path */}
-      <div className="flex flex-col w-fit items-start relative bottom-[27rem] right-[29rem]">
+      <div className="flex flex-col items-start relative bottom-[17rem] right-[29rem]">
         <div className="rounded-full w-fit ml-16 border border-white border-opacity-20">
           <IoIosCheckmark size={30} fill="gray" />
         </div>
@@ -118,11 +118,11 @@ const LearningPath = () => {
         </div>
       </div>
       {/* path five */}
-      <div className="relative bottom-[42rem] right-[27rem] ">
+      <div className="relative bottom-[32rem] right-[27rem] ">
         <img src={pathFive} alt="path goes on" />
       </div>
       {/* path end last part rows */}
-      <div className="flex flex-row mt-[-52rem] gap-3 relative left-[14rem]">
+      <div className="flex flex-row mt-[-42rem] gap-3 relative left-[14rem]">
         <div className="w-[20rem] h-fit rounded-lg  flex flex-col gap-3">
           {/* Timer */}
           <div className="flex flex-col gap-2 p-3 bg-[#151515] rounded-lg">

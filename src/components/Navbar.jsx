@@ -4,8 +4,8 @@ import broadcast from "../assets/images/broadcast.svg";
 
 const Navbar = () => {
   return (
-    <div className="fixed z-10 w-full border-b border-white border-opacity-20">
-      <div className=" flex h-14 px-[6rem] w-full items-center justify-around bg-[rgba(0,0,0,0.3)] navbar">
+    <div className="flex fixed z-10 w-full border-b border-white border-opacity-20">
+      <div className=" flex h-14 w-full items-center justify-around bg-[rgba(0,0,0,0.3)]">
         <img src={logo} alt="brand-logo" />
         <ul className="links flex ml-12 gap-7 bg-transparent font-medium text-gray-300">
           <li>Compass</li>

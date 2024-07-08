@@ -20,7 +20,7 @@ const Dictionary = () => {
             src="https://static.highongrowth.xyz/enterprise/660ed0280f5e5a9e8238d0f5/2e422c461a9a447b8c67c5642f6bf0fd.svg"
             alt=""
           />
-          <div className=" absolute top-[88%] ml-4 mb-4 backdrop-blur-[3px] w-full">
+          <div className=" absolute top-[88%] ml-4 mb-4 backdrop-blur-[3px] w-fit">
             <div className=" text-2xl text-gray-100">Web3 + Degen Glossary</div>
             <div className="text-base text-gray-200 opacity-50">
               Your own Crypto Dictionary
@@ -28,7 +28,7 @@ const Dictionary = () => {
           </div>
           <div
             className="border border-white border-opacity-20 rounded-full absolute p-4 bottom-[1rem]
-            left-[85%] bg-black bg-opacity-20 "
+            left-[85%] w-fit bg-black bg-opacity-20 "
           >
             <HiOutlineBookOpen size={30} />
           </div>
