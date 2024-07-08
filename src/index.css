@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  background-color: black;
+  color: #e9ecef;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.links li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.links li {
+  font-size: 15px;
+}
+
+input {
+  outline: none;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  top: 3.5rem;
+  background-image: url("./assets/images/hero_comp.png");
+  height: 85vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.hero-main {
+  mix-blend-mode: screen;
+  width: 50%;
+  height: 10rem;
+  position: absolute;
+  top: 23%;
+  left: 25%;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.hero--main-image {
+  width: 14.25rem;
+  height: 8.25rem;
+}
+
+.call-to-action {
+  width: 14.25rem;
+  color: lightgray;
+  font-size: 1rem;
+}
+.accordoin-one {
+  top: -9rem;
+}
+
+.path-one {
+  position: relative;
+  top: -10rem;
+}
+
+.timer {
+  background-image: url("./assets/images/timer-bg.png");
+  background-repeat: no-repeat;
+}
+
+.border-white--custom {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.play-button-one {
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}
+
+.video-one:hover .play-button-one {
+  opacity: 100;
+}
+
+.footer span {
+  color: gray;
+  font-size: 14px;
+}
