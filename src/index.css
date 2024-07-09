@@ -13,6 +13,8 @@ html {
   background-color: black;
   color: #e9ecef;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {

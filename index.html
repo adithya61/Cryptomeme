@@ -10,10 +10,50 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <style>
+      /* Ensure the loader covers the entire page */
+      #loader {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        /* background-image: url("./src/assets/images/web_loader.gif"); */
+        background-repeat: no-repeat;
+        object-fit: cover;
+        z-index: 1000;
+      }
+      #loader.hidden {
+        display: none;
+      }
+    </style>
     <title>Intract</title>
   </head>
   <body class="outfit">
-    <div id="root"></div>
+    <div id="loader">
+      <img src="./src/assets/images/web_loader.gif" alt="" />
+    </div>
+    <div id="content" class="hidden">
+      <div id="root"></div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        NProgress.start();
+      });
+
+      window.addEventListener("load", function () {
+        NProgress.done();
+        document.getElementById("loader").classList.add("hidden");
+        document.getElementById("content").classList.remove("hidden");
+      });
+    </script>
   </body>
 </html>
