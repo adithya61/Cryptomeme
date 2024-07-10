@@ -15,11 +15,11 @@ html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-size: 17px;
 }
 
 body {
   width: 100vw;
-  font-size: 0.75rem;
   margin: 0;
   padding: 0;
 }
@@ -27,10 +27,6 @@ body {
 .links li:hover {
   color: white;
   cursor: pointer;
-}
-
-.links li {
-  font-size: 15px;
 }
 
 input {
@@ -50,11 +46,11 @@ input {
 
 .hero-main {
   mix-blend-mode: screen;
-  width: 50%;
+  width: 80%;
   height: 10rem;
   position: absolute;
-  top: 23%;
-  left: 25%;
+  top: 20%;
+  left: 10%;
 }
 
 .hero-text {
@@ -72,9 +68,7 @@ input {
   color: lightgray;
   font-size: 1rem;
 }
-.accordoin-one {
-  top: -3rem;
-}
+
 
 .path-one {
   position: relative;
@@ -102,4 +96,26 @@ input {
 .footer span {
   color: gray;
   font-size: 14px;
+}
+
+/* Medium screens (min-width: 768px) */
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .hero-main {
+    mix-blend-mode: screen;
+    width: 50%;
+    height: 10rem;
+    position: absolute;
+    top: 23%;
+    left: 25%;
+  }
+}
+
+/* Large screens (min-width: 1024px) and above */
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
 }

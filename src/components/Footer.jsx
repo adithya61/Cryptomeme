@@ -3,16 +3,16 @@ import { BsDiscord, BsSpotify, BsTelegram, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="px-[8rem]">
-      <div className="flex flex-row py-[4rem] justify-between ">
-        <div className="flex flex-col gap-5 w-[33.3%]">
+    <div className=" px-8 md:px-[5rem]">
+      <div className="flex flex-col md:flex-row py-[4rem] justify-between ">
+        <div className="flex flex-col gap-5 w-[100%] md:w-[50%]">
           <div className="text-2xl text-white">Intract.</div>
           <p className="text-base text-gray-500">
             We are your personal guide for exploring web3 projects & earning
             100x rewards
           </p>
         </div>
-        <div className=" footer gap-10 w-full ml-[10rem] grid grid-cols-4 ">
+        <div className=" footer gap-10 w-full mt-8 md:mt-0 ml-1 md:ml-[2rem] grid grid-cols-2 md:grid-cols-4 ">
           <div className="flex flex-col  gap-2">
             <h1 className="text-xl text-white">Intract</h1>
             <span>Explore Quests</span>
@@ -60,8 +60,8 @@ const Footer = () => {
         </p>
       </div>
       <div className="h-[1px] bg-white bg-opacity-20"></div>
-      <div className="flex justify-between my-[3rem]">
-        <span className="text-xl capitalize">
+      <div className="flex justify-between my-[2rem]">
+        <span className="text-sm md:text-xl capitalize">
           created by <span className=" underline">intract</span>
         </span>
         <div className="flex gap-2">

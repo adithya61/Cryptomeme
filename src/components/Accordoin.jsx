@@ -11,7 +11,7 @@ const Accordoin = ({ image, isOpen, setIsOpen, tasks }) => {
     <div
       className={
         ` cursor-pointer rounded-tr-3xl rounded-tl-3xl border-[1px] border-white border-opacity-20
-            text-white w-full bg-[#1A1616] bg-opacity-60 h-[14.25rem] hover:bg-[#1e2022] ` +
+            text-white w-[31rem] bg-[#1A1616] bg-opacity-60 h-[14.25rem] hover:bg-[#1e2022] ` +
         `${
           isOpen
             ? " rounded-bl-none rounded-br-none"
@@ -23,12 +23,12 @@ const Accordoin = ({ image, isOpen, setIsOpen, tasks }) => {
         <div className="h-full" onClick={() => toggle()}>
           <div className="flex items-center h-full w-full">
             {/* Accordion image */}
-            <div className="flex p-[1.5rem] w-full">
+            <div className="flex p-[1rem] md:p-[1.5rem] w-full">
               <Image img={image} quests={true} />
               {/*  column 2 */}
               <div className="flex flex-col ml-4 ">
-                <span className="text-2xl mb-2">Basics of Crypto </span>
-                <p className="text-gray-400 mb-4 text-base leading-5">
+                <span className=" text-lg md:text-2xl mb-2">Basics of Crypto </span>
+                <p className="text-gray-400 mb-4 text-sm md:text-base leading-5">
                   The safest and easiest place to start <br /> your crypto
                   journey!
                 </p>

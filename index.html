@@ -10,13 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
     <style>
-      /* Ensure the loader covers the entire page */
       #loader {
         position: fixed;
         display: flex;
@@ -24,8 +18,8 @@
         align-items: center;
         width: 100vw;
         height: 100vh;
+        margin: -8px;
         background-color: black;
-        /* background-image: url("./src/assets/images/web_loader.gif"); */
         background-repeat: no-repeat;
         object-fit: cover;
         z-index: 1000;
@@ -45,12 +39,9 @@
     </div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        NProgress.start();
-      });
+      document.addEventListener("DOMContentLoaded", function () {});
 
       window.addEventListener("load", function () {
-        NProgress.done();
         document.getElementById("loader").classList.add("hidden");
         document.getElementById("content").classList.remove("hidden");
       });

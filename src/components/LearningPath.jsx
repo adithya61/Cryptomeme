@@ -22,11 +22,19 @@ const LearningPath = () => {
     "https://static.highongrowth.xyz/enterprise/65017d014e5f24613adbfd67/85903745c34d42d684a2dc505768afa7.png";
 
   return (
-    <div className="flex flex-col relative bottom-14 items-center overflow-hidden">
-      <div className="flex relative top-12">
-        <img className="path-one" src={pathOne} alt="path" />
+    <div className="flex flex-col relative md:bottom-[15rem] lg:bottom-[7rem] items-center overflow-hidden">
+      <div className="flex relative top-[3rem] left-[-2rem]">
+        <img
+          className="path-one hidden  md:block left-[8rem]"
+          src={pathOne}
+          alt="path"
+        />
         {/* Accordion */}
-        <div className="accordoin-one flex w-[46rem] relative ">
+        <div
+          className="flex w-[12rem] md:w-[25rem] lg:w-[46rem] 
+          left-[6.5rem] md:left-[8rem]
+         relative lg:top-[-3rem]"
+        >
           <Accordoin
             image={accordImgOne}
             setIsOpen={setOpenOne}
@@ -34,11 +42,18 @@ const LearningPath = () => {
             tasks={tasks}
           />
         </div>
-        <div className="relative right-[10rem] top-[10rem] z-[-10]">
+        <div
+          className=" hidden md:block relative md:right-[2rem] lg:right-[10rem] 
+          md:top-[13rem] lg:top-[10rem] lg:z-[-1]
+         md:w-[35rem] lg:w-[40rem] h-[10rem]"
+        >
           <img src={pathTwo} alt="learning path continues" />
         </div>
         {/* image in path */}
-        <div className="flex flex-col items-start relative right-[10rem] top-[10rem]">
+        <div
+          className="flex flex-col items-start relative  md:right-[7rem] lg:right-[10rem] 
+        top-[40rem] md:top-[10rem]"
+        >
           <div className="rounded-full w-fit ml-16 border border-white border-opacity-20">
             <IoIosCheckmark size={30} fill="gray" />
           </div>
@@ -55,7 +70,7 @@ const LearningPath = () => {
             />
           </div>
           <div className="mt-[-2rem] flex flex-col items-start">
-            <div className="text-xl w-[17rem] text-gray-400">
+            <div className="md:text-ls lg:text-xl w-[17rem] text-gray-400">
               Intract Certified: Learner NFT
             </div>
             <p className="text-gray-700 text-sm">
@@ -71,10 +86,13 @@ const LearningPath = () => {
         </div>
       </div>
       {/* Path goes on */}
-      <div className=" relative bottom-[-2rem] left-[28.5rem] z-[-1]">
+      <div className=" relative hidden md:block bottom-[-2rem]  md:left-[20rem] lg:left-[28.5rem] z-[-1]">
         <img src={pathThree} alt="dotted path" />
       </div>
-      <div className="relative bottom-[-1rem] left-[5rem]">
+      <div
+        className=" flex w-[12rem] md:w-[25rem] lg:w-[46rem] 
+       relative bottom-[-48rem] md:bottom-[-1rem] lg:bottom-[-1rem] left-[-4rem] md:left-[1rem] lg:left-[10rem]"
+      >
         <Accordoin
           image={accordImgTwo}
           setIsOpen={setOpenTwo}
@@ -82,11 +100,12 @@ const LearningPath = () => {
           tasks={tasks}
         />
       </div>
-      <div className="relative right-[19rem] bottom-[5rem]">
+      <div className="relative hidden md:block right-[22rem] bottom-[5rem]">
         <img src={pathFour} alt="" />
       </div>
       {/* second image in path */}
-      <div className="flex flex-col items-start relative bottom-[17rem] right-[29rem]">
+      <div className="flex flex-col items-start relative bottom-[-72rem] md:bottom-[20rem] lg:bottom-[17rem]
+       right-[-2rem] md:right-[17rem] lg:right-[29rem]">
         <div className="rounded-full w-fit ml-16 border border-white border-opacity-20">
           <IoIosCheckmark size={30} fill="gray" />
         </div>
@@ -121,11 +140,11 @@ const LearningPath = () => {
         </div>
       </div>
       {/* path five */}
-      <div className="relative bottom-[32rem] right-[27rem] ">
+      <div className="relative hidden md:block md:bottom-[32rem] md:right-[27rem] md:z-[-1] ">
         <img src={pathFive} alt="path goes on" />
       </div>
       {/* path end last part rows */}
-      <div className="flex flex-row mt-[-42rem] gap-3 relative left-[14rem]">
+      <div className="flex flex-col md:flex-row mt-[80rem] md:mt-[-42rem] gap-3 relative md:left-[6rem] lg:left-[14rem] ">
         <div className="w-[20rem] h-fit rounded-lg  flex flex-col gap-3">
           {/* Timer */}
           <div className="flex flex-col gap-2 p-3 bg-[#151515] rounded-lg">
@@ -200,7 +219,7 @@ const LearningPath = () => {
           </div>
         </div>
         {/* single box */}
-        <div className="w-[20rem] mt-[2rem] ml-[5rem] flex flex-col">
+        <div className=" w-[20rem] md:w-[18rem] md:mt-[2rem] md:ml-[2rem] flex flex-col">
           <div className="p-4 flex flex-col bg-[#151515] rounded-lg">
             <span className="text-sm text-gray-400">Rewards info</span>
             <div className="h-[1px] bg-opacity-20 w-full bg-white mt-4"></div>
@@ -220,8 +239,8 @@ const LearningPath = () => {
               </div>
             </div>
           </div>
-          <div className="h-[7rem] bg-white bg-opacity-20 w-[1px] relative left-[10rem]"></div>
-          <div className="h-[1px] bg-white bg-opacity-20 w-[15.5rem] relative right-[5.5rem]"></div>
+          <div className="hidden md:block h-[7rem] bg-white bg-opacity-20 w-[1px] relative left-[10rem]"></div>
+          <div className="hidden md:block  h-[1px] bg-white bg-opacity-20 w-[15.5rem] relative right-[5.5rem]"></div>
         </div>
       </div>
     </div>
